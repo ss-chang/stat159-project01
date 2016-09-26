@@ -1,3 +1,5 @@
+all: paper/paper.html
+
 # Compiling the paper.md file
 paper/paper.md: paper/sections/*.md
 	pandoc paper/sections/*.md -s -o paper/paper.md
