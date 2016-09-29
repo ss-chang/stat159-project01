@@ -34,12 +34,13 @@ one's workflow and easier identification of any coding mistakes.
 Git is system of version control that can be used to save and track changes in our work. 
 Version control systems save the base version of a document and only the changes as you
 update and add to the document. The changes are stored separately from the base document, 
-so it is possible for multiple users to make independent changes to the same document. Provided that there are no conflicts, multiple sets of changes can also implemented in the same base 
-document. 
+so it is possible for multiple users to make independent changes to the same document.
+Provided that there are no conflicts, multiple sets of changes can also implemented in the 
+same base document. 
 
 #### A brief introduction to tracking changes
-To track the changes we make to a document or file, we execute a `commit` by first telling
-Git to track a file via `git add`:
+To track a set of changes that we make to a document or file, we execute a `commit` by first
+telling Git to track a file via `git add`:
 ```
 git add document-name.txt
 ```  
@@ -51,7 +52,18 @@ For best practices, a commit message should be a concise but meaningful descript
 change or edit you added to your base document.  
   
 #### Role in a reproducible workflow
-Git
-
+Git serves as a very effective tool for data handling because we can use it to back up our 
+work on a frequent basis with minimal effort. Since commits can be made frequently 
+throughout the workflow process, a `git log` can then be used as another source of detailed 
+documentation of the data analysis process. Commits are time stamped, so calling `git log` 
+can give us a chronological record of all sets of changes made within a git-initialized 
+working directory. 
+  
+Like makefiles, Git facilitates reproducibility by providing more transparency towards one's 
+workflow and allows for easier identification of any coding mistakes--all with the added 
+element of chronological record. Commit messages further enable reproducibility by providing  
+commentary on a person's thought process and approach towards a project or research effort. 
+It must be noted, however, that Git's effectiveness in enabling reproducibility relies largely 
+on the author's frequency of commits. 
 ## Markdown
 ![the Markdown logo](../../images/markdown-logo.png)  
