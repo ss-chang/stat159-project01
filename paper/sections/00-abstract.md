@@ -7,6 +7,7 @@ online repository for my project directory and will be set up to pull commits an
 my computer. Markdown is a type of file that I will write my text files in; these text files 
 will later be compiled into a single document to represent my entire paper. Finally, I will use
 pandoc to convert my compiled markdown file into other file types, such as html.  
+  
 In addition to commenting on the tools used for this paper, I will also discuss areas of this 
 project that I found easy, areas that I found difficult, what assistance I needed, and how much
 time the overall process took me. 
