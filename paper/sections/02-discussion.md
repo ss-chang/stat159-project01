@@ -235,4 +235,5 @@ This | times this | equals this
 1 | 2 | 2
 1 | 3 | 3
   
-**These are just some of the many ways we can format text in Markdown.**
+**These are just some of the many ways we can format text in Markdown.**  
+  
