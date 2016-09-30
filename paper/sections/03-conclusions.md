@@ -1,4 +1,4 @@
-# Conclusions
+# Conclusions  
 Overall, this project was a very good learning experience for me because I am a lot more familiar now
 with the tools that can be used to create a reproducible work. The easiest part of this project was
 using writing everything in Markdown. This makes sense because Markdown was intended to be as 
