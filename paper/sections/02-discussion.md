@@ -1,7 +1,6 @@
 # Discussion
 
 ## Makefiles
-#### Description
 A `Makefile` is a text file that implements **make**. Make is a Unix tool that "controls the 
 generation of executables and other non-source files of a program from the program's source
 files." Thus, a _makefile_ is where we can write out what commands we want to execute through
@@ -26,8 +25,7 @@ output.pdf: input.txt
 	pandoc input.txt -s -o output.pdf
 ```  
   
-Rules can also have multiple source files, wherein multiple source files are used to 
-generate a single target file.  
+Rules can also have multiple source files that are used to generate a single target file.  
 An example of this would look something like:  
 ```
 star-wars.md: episode-iv.md episode-v.md episode-vi.md
@@ -52,7 +50,7 @@ one's workflow and easier identification of any coding mistakes.
 
 
 ## Git
-![the git logo, a red rhombus with white nodules in the center](images/git-logo.png)  
+![the git logo, a red rhombus with white nodules in the center](../images/git-logo.png)  
 
 Git is system of version control that can be used to save and track changes in our work. 
 Version control systems save the base version of a document and only the changes as you
@@ -90,10 +88,50 @@ It must be noted, however, that Git's effectiveness in enabling reproducibility 
 largely on the author's frequency of commits.  
   
 ## GitHub
-![the GitHub logo, a ]
+![the GitHub logo, a black and white sillhouette of an octocat and "GitHub" in black](../images/github-logo.png)  
+  
+GitHub is an online platform through which we can host copies of our local repositories. 
+
+To link a local repository to GitHub, we first have to create a new online repository in a 
+GitHub account. Once we finish creating the online repository, GitHub will give us a HTTPS 
+link that we then associate with our local repository by typing the following:  
+```
+git remote add origin https://github.com/user/repo-link-here.git
+```  
+  
+To check whether we were successful in linking the two repositories together, we type:  
+```
+git remote -v
+```  
+This should then show something like:  
+```
+origin https://github.com/user/repo-link-here.git (fetch)
+origin https://github.com/user/repo-link-here.git (push)
+```
+
+After this, we can type:  
+```
+git push origin master
+```
+to push changes tracked in our local repository to our online repository on GitHub.  
+
+### Role in this project
+GitHub is particularly useful in this project for two reasons. One is that I can 
+back up my work on a frequent basis with minimal effort, since I only need to 
+execute `git push origin master` once I complete the initial set up. This ensures 
+that my data will be safe and reduces the reluctance that I would feel towards 
+frequently backing up my files if I had to do it all manually. Another reason that 
+GitHub is useful for this project is that by making my repository public, anyone can
+see what I am working on and view my progress. This promotes reproducibility by 
+making my work transparent and clear to others, since they can look through my 
+commit history and see what methods I am using to approach my project goal. In 
+addition, others can collaborate with me on the project by creating a fork of 
+my repository and making separate, independent changes to the files I have in my 
+GitHub repository.
+
 
 ## Markdown
-![the Markdown logo, a black capital M](images/markdown-logo.png)  
+![the Markdown logo, a black capital M](../images/markdown-logo.png)  
   
 Markdown is a tool that converts plain text to HTML. The main idea behind Markdown is that 
 a document written with Markdown should be 
