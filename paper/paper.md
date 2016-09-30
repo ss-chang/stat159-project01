@@ -101,7 +101,7 @@ Git
 ---
 
 ![the git logo, a red rhombus with white nodules in the
-center](/files/images/git-logo.png)
+center](images/git-logo.png)
 
 Git is system of version control that can be used to save and track
 changes in our work. Version control systems save the base version of a
@@ -152,7 +152,7 @@ GitHub
 Markdown
 --------
 
-![the Markdown logo, a black capital M](/files/images/markdown-logo.png)
+![the Markdown logo, a black capital M](images/markdown-logo.png)
 
 Markdown is a tool that converts plain text to HTML. The main idea
 behind Markdown is that a document written with Markdown should be \#
