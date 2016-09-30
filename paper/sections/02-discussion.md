@@ -39,7 +39,7 @@ star-wars.md: *.md
 ```  
 
   
-#### Role in a reproducible workflow
+### Role in a reproducible workflow
 Since makefiles can automate all the commands that are necessary for reproducing a target 
 file, they make the reproduction process much more efficient and help reduce discrepancies 
 in code and/or order of command execution that can arise from manually entering or 
@@ -59,7 +59,7 @@ so it is possible for multiple users to make independent changes to the same doc
 Provided that there are no conflicts, multiple sets of changes can also implemented in the 
 same base document. 
 
-#### A brief introduction to tracking changes
+### A brief introduction to tracking changes
 To track a set of changes that we make to a document or file, we execute a `commit` by first
 telling Git to track a file via `git add`:
 ```
@@ -72,7 +72,7 @@ git commit -m "Create document for demonstration"
 For best practices, a commit message should be a concise but meaningful description of the 
 change or edit you added to your base document.  
   
-#### Role in a reproducible workflow
+### Role in a reproducible workflow
 Git serves as a very effective tool for data handling because we can use it to back up our 
 work on a frequent basis with minimal effort. Since commits can be made frequently 
 throughout the workflow process, a `git log` can then be used as another source of detailed 
@@ -161,4 +161,78 @@ project files will be accessible in a variety of formats.
 ![the Markdown logo, a black capital M](../images/markdown-logo.png)  
   
 Markdown is a tool that converts plain text to HTML. The main idea behind Markdown is that 
-a document written with Markdown should be 
+a document written with Markdown should be as easy to read as possible and ready to be 
+published without looking cluttered with tags or formatting instructions. 
+
+### Some basic examples of Markdown formatting:
+#### Headers
+```
+# One pound sign for the largest size ...
+## ... another for the next size ...
+### ... and another for the one after that...
+#### ... and another ...
+##### ... and another...
+###### ...and you get the idea.
+```  
+# One pound sign for the largest size ...  
+## ... another for the next size ...  
+### ... and another for the one after that...  
+#### ... and another ...  
+##### ... and another...  
+###### ...and you get the idea.  
+  
+#### Emphasis
+```
+Single *asterisks* or _underscores_ on each side of the text for italics.
+
+Double **asterisks* or __underscores__ on each side of the text for bold.
+
+_Combination of **both**._
+```  
+Single *asterisks* or _underscores_ on each side of the text for italics.  
+Double **asterisks* or __underscores__ on each side of the text for bold.  
+_Combination of **both**._  
+  
+#### Lists
+```
+1. Item 1
+2. Item 2
+3. Item 3
+
+* Astersk for bullet
+	* Tab and asterisk for sub-bullet
+```  
+1. Item 1  
+2. Item 2  
+3. Item 3  
+
+* Astersk for bullet  
+	* Tab and asterisk for sub-bullet  
+  
+#### Links
+``` 
+[Text here](http://lmgtfy.com/?q=link+here)
+```  
+[Text here](http://lmgtfy.com/?q=link+here)  
+  
+#### Images
+```
+![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)
+```  
+![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)  
+  
+#### Tables
+```
+This | times this | equals this
+--- | --- | ---
+1 | 1 | 1
+1 | 2 | 2
+1 | 3 | 3
+```  
+This | times this | equals this
+--- | --- | ---
+1 | 1 | 1
+1 | 2 | 2
+1 | 3 | 3
+  
+**These are just some of the many ways we can format text in Markdown.**
