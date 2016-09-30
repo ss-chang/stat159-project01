@@ -1,9 +1,12 @@
-all: paper/paper.html
+.PHONY: all clean
+
+all: paper.html
 
 # Compiling the paper.md file
-paper/paper.md: paper/sections/*.md
-	pandoc paper/sections/*.md -s -o paper/paper.md
+paper.md: paper/sections/*.md
+	cd paper/sections; pandoc *.md -s -o paper.md
+	cd paper/sections; mv paper.md ../
 
 # Converting paper.md to paper.html
-paper/paper.html: paper/paper.md
-	pandoc paper/paper.md -s -o paper/paper.html
+paper.html: paper.md
+	cd paper; pandoc paper.md -s -o paper.html
