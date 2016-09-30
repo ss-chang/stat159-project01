@@ -120,16 +120,16 @@ to push changes tracked in our local repository to our online repository on GitH
 ### Role in this project
 GitHub is particularly useful in this project for two reasons. One is that I can 
 back up my work on a frequent basis with minimal effort, since I only need to 
-execute `git push origin master` once I complete the initial set up. This ensures 
-that my data will be safe and reduces the reluctance that I would feel towards 
-frequently backing up my files if I had to do it all manually. Another reason that 
-GitHub is useful for this project is that by making my repository public, anyone can
-see what I am working on and view my progress. This promotes reproducibility by 
-making my work transparent and clear to others, since they can look through my 
-commit history and see what methods I am using to approach my project goal. In 
-addition, others can collaborate with me on the project by creating a fork of 
-my repository and making separate, independent changes to the files I have in my 
-GitHub repository.  
+execute `git push origin master` to update the online repository after initial 
+set up. This ensures that my data will be safe and reduces the reluctance that 
+I would feel towards frequently backing up my files if I had to do it all manually. 
+Another reason that GitHub is useful for this project is that by making my 
+repository public, anyone can see what I am working on and view my progress. 
+This promotes reproducibility by making my work transparent and clear to others, 
+since they can look through my commit history and see what methods I am using to 
+approach my project goal. In addition, others can collaborate with me on the project 
+by creating a fork of my repository and making separate, independent changes to the 
+files I have in my GitHub repository.  
   
   
   
@@ -140,7 +140,7 @@ Pandoc is a document converter that can be called from the command line to
 easily convert one file type into another. This image from the 
 [Pandoc main page](http://pandoc.org/) shows all the possible file conversions.
   
-!(http://pandoc.org/diagram.jpg)  
+![](http://pandoc.org/diagram.jpg)  
   
 A basic pandoc command looks like this:
 ```
@@ -221,19 +221,5 @@ _Combination of **both**._
 ```  
 ![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)  
   
-#### Tables
-```
-This | times this | equals this
---- | --- | ---
-1 | 1 | 1
-1 | 2 | 2
-1 | 3 | 3
-```  
-This | times this | equals this
---- | --- | ---
-1 | 1 | 1
-1 | 2 | 2
-1 | 3 | 3
   
 **These are just some of the many ways we can format text in Markdown.**  
-  
