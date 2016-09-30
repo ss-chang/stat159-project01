@@ -46,9 +46,9 @@ in code and/or order of command execution that can arise from manually entering 
 copying and pasting all the needed commands. Makefiles can also serve as a step-by-step 
 documentation of ones' data analysis process, which allows for more transparency towards 
 one's workflow and easier identification of any coding mistakes. 
-
-
-
+  
+  
+  
 ## Git
 ![the git logo, a red rhombus with white nodules in the center](../images/git-logo.png)  
 
@@ -86,6 +86,8 @@ element of chronological record. Commit messages further enable reproducibility 
 commentary on a person's thought process and approach towards a project or research effort. 
 It must be noted, however, that Git's effectiveness in enabling reproducibility relies 
 largely on the author's frequency of commits.  
+  
+  
   
 ## GitHub
 ![the GitHub logo, a black and white sillhouette of an octocat and "GitHub" in black](../images/github-logo.png)  
@@ -127,9 +129,34 @@ making my work transparent and clear to others, since they can look through my
 commit history and see what methods I am using to approach my project goal. In 
 addition, others can collaborate with me on the project by creating a fork of 
 my repository and making separate, independent changes to the files I have in my 
-GitHub repository.
-
-
+GitHub repository.  
+  
+  
+  
+## Pandoc
+![the Pandoc logo, the word "Pandoc" in large font and "a universal document converter" in small font](../images/pandoc-logo.png)  
+  
+Pandoc is a document converter that can be called from the command line to 
+easily convert one file type into another. This image from the 
+[Pandoc main page](http://pandoc.org/) shows all the possible file conversions.
+  
+!(http://pandoc.org/diagram.jpg)  
+  
+A basic pandoc command looks like this:
+```
+pandoc file.txt -s -o file.pdf
+```  
+where file.txt is the input file that we want to convert in .pdf output.  
+  
+Pandoc is highly useful in the sense that it can be easily called in command 
+line to convert documents and can incorporate elements such as wild cards 
+to make mass conversion of files much more efficient than if we were to use a
+GUI designed converter (which is often intended for converting a small number 
+of files and sometimes involves purchase). Using Pandoc helps insure that my 
+project files will be accessible in a variety of formats.  
+  
+  
+  
 ## Markdown
 ![the Markdown logo, a black capital M](../images/markdown-logo.png)  
   
