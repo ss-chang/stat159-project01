@@ -195,9 +195,9 @@ _Combination of **both**._
   
 #### Lists
 ```
-1. Item 1
-2. Item 2
-3. Item 3
+1. Item 1  
+2. Item 2  
+3. Item 3  
 
 * Astersk for bullet
 	* Tab and asterisk for sub-bullet
@@ -206,7 +206,7 @@ _Combination of **both**._
 2. Item 2  
 3. Item 3  
 
-* Astersk for bullet  
+* Asterisk for bullet  
 	* Tab and asterisk for sub-bullet  
   
 #### Links
