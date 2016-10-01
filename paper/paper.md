@@ -294,7 +294,7 @@ One pound sign for the largest size ...
 
 Single *asterisks* or *underscores* on each side of the text for
 italics.\
-Double \*\*asterisks\* or **underscores** on each side of the text for
+Double **asterisks** or **underscores** on each side of the text for
 bold.\
 *Combination of **both**.*
 
@@ -306,7 +306,7 @@ bold.\
     2. Item 2  
     3. Item 3  
 
-    * Astersk for bullet
+    * Asterisk for bullet
         * Tab and asterisk for sub-bullet
 
 ##### Output:
