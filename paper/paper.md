@@ -255,12 +255,16 @@ cluttered with tags or formatting instructions.
 
 #### Headers
 
+##### Code:
+
     # One pound sign for the largest size ...
     ## ... another for the next size ...
     ### ... and another for the one after that...
     #### ... and another ...
     ##### ... and another...
     ###### ...and you get the idea.
+
+##### Output:
 
 One pound sign for the largest size ...
 =======================================
@@ -278,11 +282,15 @@ One pound sign for the largest size ...
 
 #### Emphasis
 
+##### Code:
+
     Single *asterisks* or _underscores_ on each side of the text for italics.
 
     Double **asterisks* or __underscores__ on each side of the text for bold.
 
     _Combination of **both**._
+
+##### Output:
 
 Single *asterisks* or *underscores* on each side of the text for
 italics.\
@@ -292,29 +300,41 @@ bold.\
 
 #### Lists
 
-    1. Item 1
-    2. Item 2
-    3. Item 3
+##### Code:
+
+    1. Item 1  
+    2. Item 2  
+    3. Item 3  
 
     * Astersk for bullet
         * Tab and asterisk for sub-bullet
+
+##### Output:
 
 1.  Item 1\
 2.  Item 2\
 3.  Item 3
 
--   Astersk for bullet
+-   Asterisk for bullet
     -   Tab and asterisk for sub-bullet
 
 #### Links
 
+##### Code:
+
     [Text here](http://lmgtfy.com/?q=link+here)
+
+##### Output:
 
 [Text here](http://lmgtfy.com/?q=link+here)
 
 #### Images
 
+##### Code:
+
     ![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)
+
+##### Output:
 
 ![the History Channel aliens guy saying Boromir
 things](http://bit.ly/2deHWTC)
