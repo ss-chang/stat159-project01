@@ -50,7 +50,7 @@ one's workflow and easier identification of any coding mistakes.
   
   
 ## Git
-![the git logo, a red rhombus with white nodules in the center](../images/git-logo.png)  
+![the git logo, a red rhombus with white nodules in the center]<img src="../images/git-logo.png" height = "75">  
 
 Git is system of version control that can be used to save and track changes in our work. 
 Version control systems save the base version of a document and only the changes as you
@@ -90,7 +90,7 @@ largely on the author's frequency of commits.
   
   
 ## GitHub
-![the GitHub logo, a black and white sillhouette of an octocat and "GitHub" in black](../images/github-logo.png)  
+![the GitHub logo, a black and white sillhouette of an octocat and "GitHub" in black]<img src="../images/github-logo.png" height = "75">  
   
 GitHub is an online platform through which we can host copies of our local repositories. 
 
@@ -121,7 +121,7 @@ to push changes tracked in our local repository to our online repository on GitH
 GitHub is particularly useful in this project for two reasons. One is that I can 
 back up my work on a frequent basis with minimal effort, since I only need to 
 execute `git push origin master` to update the online repository after initial 
-set up. This ensures that my data will be safe and reduces the reluctance that 
+set up. This ensures that my data will be safely stored and reduces the reluctance that 
 I would feel towards frequently backing up my files if I had to do it all manually. 
 Another reason that GitHub is useful for this project is that by making my 
 repository public, anyone can see what I am working on and view my progress. 
@@ -134,7 +134,7 @@ files I have in my GitHub repository.
   
   
 ## Pandoc
-![the Pandoc logo, the word "Pandoc" in large font and "a universal document converter" in small font](../images/pandoc-logo.png)  
+![the Pandoc logo, the word "Pandoc" in large font and "a universal document converter" in small font]<img src="../images/pandoc-logo.png" height = "65">
   
 Pandoc is a document converter that can be called from the command line to 
 easily convert one file type into another. This image from the 
@@ -158,7 +158,7 @@ project files will be accessible in a variety of formats.
   
   
 ## Markdown
-![the Markdown logo, a black capital M](../images/markdown-logo.png)  
+![the Markdown logo, a black capital M]<img src="../images/markdown-logo.png" height = "75">  
   
 Markdown is a tool that converts plain text to HTML. The main idea behind Markdown is that 
 a document written with Markdown should be as easy to read as possible and ready to be 
@@ -217,9 +217,9 @@ _Combination of **both**._
   
 #### Images
 ```
-![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)
+![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)
 ```  
-![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)  
+![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)  
   
   
 **These are just some of the many ways we can format text in Markdown.**  
