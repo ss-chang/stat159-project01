@@ -166,6 +166,7 @@ published without looking cluttered with tags or formatting instructions.
 
 ### Some basic examples of Markdown formatting:
 #### Headers
+##### Code:
 ```
 # One pound sign for the largest size ...
 ## ... another for the next size ...
@@ -174,6 +175,7 @@ published without looking cluttered with tags or formatting instructions.
 ##### ... and another...
 ###### ...and you get the idea.
 ```  
+##### Output:
 # One pound sign for the largest size ...  
 ## ... another for the next size ...  
 ### ... and another for the one after that...  
@@ -182,6 +184,7 @@ published without looking cluttered with tags or formatting instructions.
 ###### ...and you get the idea.  
   
 #### Emphasis
+##### Code:
 ```
 Single *asterisks* or _underscores_ on each side of the text for italics.
 
@@ -189,11 +192,13 @@ Double **asterisks* or __underscores__ on each side of the text for bold.
 
 _Combination of **both**._
 ```  
+##### Output:
 Single *asterisks* or _underscores_ on each side of the text for italics.  
 Double **asterisks* or __underscores__ on each side of the text for bold.  
 _Combination of **both**._  
   
-#### Lists
+#### Lists  
+##### Code:  
 ```
 1. Item 1  
 2. Item 2  
@@ -202,6 +207,7 @@ _Combination of **both**._
 * Astersk for bullet
 	* Tab and asterisk for sub-bullet
 ```  
+##### Output:
 1. Item 1  
 2. Item 2  
 3. Item 3  
@@ -209,16 +215,20 @@ _Combination of **both**._
 * Asterisk for bullet  
 	* Tab and asterisk for sub-bullet  
   
-#### Links
+#### Links  
+##### Code:  
 ``` 
 [Text here](http://lmgtfy.com/?q=link+here)
 ```  
+##### Output:  
 [Text here](http://lmgtfy.com/?q=link+here)  
   
 #### Images
+##### Code:
 ```
 ![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)
-```  
+``` 
+##### Output: 
 ![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)  
   
   
