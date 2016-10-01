@@ -194,7 +194,7 @@ _Combination of **both**._
 ```  
 ##### Output:
 Single *asterisks* or _underscores_ on each side of the text for italics.  
-Double **asterisks* or __underscores__ on each side of the text for bold.  
+Double **asterisks** or __underscores__ on each side of the text for bold.  
 _Combination of **both**._  
   
 #### Lists  
@@ -204,7 +204,7 @@ _Combination of **both**._
 2. Item 2  
 3. Item 3  
 
-* Astersk for bullet
+* Asterisk for bullet
 	* Tab and asterisk for sub-bullet
 ```  
 ##### Output:
