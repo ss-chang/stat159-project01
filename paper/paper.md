@@ -5,13 +5,13 @@ In this paper, I will demonstrate how to compile a reproducable paper
 using a variety of computational tools on Mac OS X. Such tools include:
 terminal/bash, markdown, pandoc, git, github, Make, and Sublime Text.
 Bash will be used to carry out terminal commands, while git will be used
-to track in files and directories that I make through bash. Github will
-be where an online repository for my project directory and will be set
-up to pull commits and changes from my computer. Markdown is a type of
-file that I will write my text files in; these text files will later be
-compiled into a single document to represent my entire paper. Finally, I
-will use pandoc to convert my compiled markdown file into other file
-types, such as html.
+to track files and changes that I make through bash. I will use Github
+to host an online repository for my project directory and I will set it
+up to pull files and commits from my local repository. Markdown is a
+type of file that I will write my text files in; these text files will
+later be compiled into a single document to represent my entire paper.
+Finally, I will use pandoc to convert my compiled markdown file into
+other file types, such as html.
 
 In addition to commenting on the tools used for this paper, I will also
 discuss areas of this project that I found easy, areas that I found
@@ -21,10 +21,35 @@ process took me.
 Introduction
 ============
 
-The motivation behind this project is to provide an example of a
-reproducible work. Doing this project will also allow me to practice how
-to make my code reproducible and easy to examine by others who may wish
-to examine or verify my work.
+After incidents such as the Reinhart and Rogoff controversy and the
+Potti scandal, many researchers and academic figures have pointed to a
+reproducibility crisis within the scientific community. The mass
+misinformation that the Reinhart and Rogoff controversy sparked by tying
+high debt-to-GDP ratios to negative GDP growth and the death of a cancer
+patient from failing to receive proper treatment after enrolling in a
+clinical trial based on Dr. Anil Potti's fabricated and manipulated data
+have all pointed to the devastating effects that improperly vetted and
+mishandled data can produce. As a result, more and more scientists are
+calling for greater reproducibility in scientific work as a way to prove
+credibility in their research.
+
+Victoria Stodden, a renowned scholar on this subject, identified
+"computational reproducibility" in
+[2014](https://www.edge.org/response-detail/25340) as one of the areas
+in reproducible research that need specific focus and additional effort.
+Stodden, along with a number of other authors, further elaborated in
+["Setting the Default to
+Reproducible"](http://stodden.net/icerm_report.pdf) that five main
+facets of computational reproducibility entail reviewable research,
+replicable research, confirmable research, auditable research, and open
+or reproducible research.
+
+In the spirit of answering to such calls for greater reproducibility
+within the scientific community, I will work through this project to
+create an example of a reproducible work. My motivation for doing so is
+to demonstrate what is necessary and helpful for creating a reproducible
+work and to practice how to make my code reproducible and easily
+accessible for others who may wish to examine or verify my work.
 
 I will also provide brief explanations of each of the tools I use for
 this project, explaining the usefulness and functions of each tool.
@@ -37,7 +62,7 @@ readers. To me, reproducibility is important because it adds
 transparency and credibility to the analysis and conlusions one may wish
 to draw out of raw data and statistics. As I begin to familiarize myself
 with the tools and best practices for reproducibility, I hope to adopt
-this type of workflow into my regular approach for researhc and
+this type of workflow into my regular approach for research and
 analysis.
 
 Discussion
@@ -98,8 +123,8 @@ coding mistakes.
 Git
 ---
 
-![the git logo, a red rhombus with white nodules in the
-center](../images/git-logo.png)
+\[the git logo, a red rhombus with white nodules in the
+center\]<img src="../images/git-logo.png" height = "75">
 
 Git is system of version control that can be used to save and track
 changes in our work. Version control systems save the base version of a
@@ -145,8 +170,8 @@ commits.
 GitHub
 ------
 
-![the GitHub logo, a black and white sillhouette of an octocat and
-"GitHub" in black](../images/github-logo.png)
+\[the GitHub logo, a black and white sillhouette of an octocat and
+"GitHub" in black\]<img src="../images/github-logo.png" height = "75">
 
 GitHub is an online platform through which we can host copies of our
 local repositories.
@@ -181,22 +206,23 @@ GitHub is particularly useful in this project for two reasons. One is
 that I can back up my work on a frequent basis with minimal effort,
 since I only need to execute `git push origin master` to update the
 online repository after initial set up. This ensures that my data will
-be safe and reduces the reluctance that I would feel towards frequently
-backing up my files if I had to do it all manually. Another reason that
-GitHub is useful for this project is that by making my repository
-public, anyone can see what I am working on and view my progress. This
-promotes reproducibility by making my work transparent and clear to
-others, since they can look through my commit history and see what
-methods I am using to approach my project goal. In addition, others can
-collaborate with me on the project by creating a fork of my repository
-and making separate, independent changes to the files I have in my
-GitHub repository.
+be safely stored and reduces the reluctance that I would feel towards
+frequently backing up my files if I had to do it all manually. Another
+reason that GitHub is useful for this project is that by making my
+repository public, anyone can see what I am working on and view my
+progress. This promotes reproducibility by making my work transparent
+and clear to others, since they can look through my commit history and
+see what methods I am using to approach my project goal. In addition,
+others can collaborate with me on the project by creating a fork of my
+repository and making separate, independent changes to the files I have
+in my GitHub repository.
 
 Pandoc
 ------
 
-![the Pandoc logo, the word "Pandoc" in large font and "a universal
-document converter" in small font](../images/pandoc-logo.png)
+\[the Pandoc logo, the word "Pandoc" in large font and "a universal
+document converter" in small
+font\]<img src="../images/pandoc-logo.png" height = "65">
 
 Pandoc is a document converter that can be called from the command line
 to easily convert one file type into another. This image from the
@@ -222,7 +248,8 @@ variety of formats.
 Markdown
 --------
 
-![the Markdown logo, a black capital M](../images/markdown-logo.png)
+\[the Markdown logo, a black capital
+M\]<img src="../images/markdown-logo.png" height = "75">
 
 Markdown is a tool that converts plain text to HTML. The main idea
 behind Markdown is that a document written with Markdown should be as
@@ -292,10 +319,10 @@ bold.\
 
 #### Images
 
-    ![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)
+    ![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)
 
 ![the History Channel aliens guy saying Boromir
-things](https://i.imgflip.com/xy6fe.jpg)
+things](http://bit.ly/2deHWTC)
 
 **These are just some of the many ways we can format text in Markdown.**
 

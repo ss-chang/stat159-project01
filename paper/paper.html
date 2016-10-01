@@ -9,12 +9,14 @@
 </head>
 <body>
 <h1 id="abstract">Abstract</h1>
-<p>In this paper, I will demonstrate how to compile a reproducable paper using a variety of computational tools on Mac OS X. Such tools include: terminal/bash, markdown, pandoc, git, github, Make, and Sublime Text. Bash will be used to carry out terminal commands, while git will be used to track in files and directories that I make through bash. Github will be where an online repository for my project directory and will be set up to pull commits and changes from my computer. Markdown is a type of file that I will write my text files in; these text files will later be compiled into a single document to represent my entire paper. Finally, I will use pandoc to convert my compiled markdown file into other file types, such as html.</p>
+<p>In this paper, I will demonstrate how to compile a reproducable paper using a variety of computational tools on Mac OS X. Such tools include: terminal/bash, markdown, pandoc, git, github, Make, and Sublime Text. Bash will be used to carry out terminal commands, while git will be used to track files and changes that I make through bash. I will use Github to host an online repository for my project directory and I will set it up to pull files and commits from my local repository. Markdown is a type of file that I will write my text files in; these text files will later be compiled into a single document to represent my entire paper. Finally, I will use pandoc to convert my compiled markdown file into other file types, such as html.</p>
 <p>In addition to commenting on the tools used for this paper, I will also discuss areas of this project that I found easy, areas that I found difficult, what assistance I needed, and how much time the overall process took me.</p>
 <h1 id="introduction">Introduction</h1>
-<p>The motivation behind this project is to provide an example of a reproducible work. Doing this project will also allow me to practice how to make my code reproducible and easy to examine by others who may wish to examine or verify my work.</p>
+<p>After incidents such as the Reinhart and Rogoff controversy and the Potti scandal, many researchers and academic figures have pointed to a reproducibility crisis within the scientific community. The mass misinformation that the Reinhart and Rogoff controversy sparked by tying high debt-to-GDP ratios to negative GDP growth and the death of a cancer patient from failing to receive proper treatment after enrolling in a clinical trial based on Dr. Anil Potti's fabricated and manipulated data have all pointed to the devastating effects that improperly vetted and mishandled data can produce. As a result, more and more scientists are calling for greater reproducibility in scientific work as a way to prove credibility in their research.</p>
+<p>Victoria Stodden, a renowned scholar on this subject, identified &quot;computational reproducibility&quot; in <a href="https://www.edge.org/response-detail/25340">2014</a> as one of the areas in reproducible research that need specific focus and additional effort. Stodden, along with a number of other authors, further elaborated in <a href="http://stodden.net/icerm_report.pdf">&quot;Setting the Default to Reproducible&quot;</a> that five main facets of computational reproducibility entail reviewable research, replicable research, confirmable research, auditable research, and open or reproducible research.</p>
+<p>In the spirit of answering to such calls for greater reproducibility within the scientific community, I will work through this project to create an example of a reproducible work. My motivation for doing so is to demonstrate what is necessary and helpful for creating a reproducible work and to practice how to make my code reproducible and easily accessible for others who may wish to examine or verify my work.</p>
 <p>I will also provide brief explanations of each of the tools I use for this project, explaining the usefulness and functions of each tool.</p>
-<p>In doing this project, I hope to become more accustomed to the processes that are essential to creating a reproducible work. I am in favor of reproducibility because it will make my research, my statements, and my arguments in any project or paper more trustworthy to my peers and readers. To me, reproducibility is important because it adds transparency and credibility to the analysis and conlusions one may wish to draw out of raw data and statistics. As I begin to familiarize myself with the tools and best practices for reproducibility, I hope to adopt this type of workflow into my regular approach for researhc and analysis.</p>
+<p>In doing this project, I hope to become more accustomed to the processes that are essential to creating a reproducible work. I am in favor of reproducibility because it will make my research, my statements, and my arguments in any project or paper more trustworthy to my peers and readers. To me, reproducibility is important because it adds transparency and credibility to the analysis and conlusions one may wish to draw out of raw data and statistics. As I begin to familiarize myself with the tools and best practices for reproducibility, I hope to adopt this type of workflow into my regular approach for research and analysis.</p>
 <h1 id="discussion">Discussion</h1>
 <h2 id="makefiles">Makefiles</h2>
 <p>A <code>Makefile</code> is a text file that implements <strong>make</strong>. Make is a Unix tool that &quot;controls the generation of executables and other non-source files of a program from the program's source files.&quot; Thus, a <em>makefile</em> is where we can write out what commands we want to execute through terminal in such a way that a target file (e.g. compiled text, graphic, etc.) can be generated from source files without having to manually type out the required commands. This is useful within a reproducible workflow in that a target file can be easily regenerated from anyone's computer as long as they have the source files.</p>
@@ -34,10 +36,7 @@ An example of this would look something like:</p>
 <h3 id="role-in-a-reproducible-workflow">Role in a reproducible workflow</h3>
 <p>Since makefiles can automate all the commands that are necessary for reproducing a target file, they make the reproduction process much more efficient and help reduce discrepancies in code and/or order of command execution that can arise from manually entering or copying and pasting all the needed commands. Makefiles can also serve as a step-by-step documentation of ones' data analysis process, which allows for more transparency towards one's workflow and easier identification of any coding mistakes.</p>
 <h2 id="git">Git</h2>
-<div class="figure">
-<img src="../images/git-logo.png" alt="the git logo, a red rhombus with white nodules in the center" />
-<p class="caption">the git logo, a red rhombus with white nodules in the center</p>
-</div>
+<p>[the git logo, a red rhombus with white nodules in the center]<img src="../images/git-logo.png" height = "75"></p>
 <p>Git is system of version control that can be used to save and track changes in our work. Version control systems save the base version of a document and only the changes as you update and add to the document. The changes are stored separately from the base document, so it is possible for multiple users to make independent changes to the same document. Provided that there are no conflicts, multiple sets of changes can also implemented in the same base document.</p>
 <h3 id="a-brief-introduction-to-tracking-changes">A brief introduction to tracking changes</h3>
 <p>To track a set of changes that we make to a document or file, we execute a <code>commit</code> by first telling Git to track a file via <code>git add</code>:</p>
@@ -50,10 +49,7 @@ An example of this would look something like:</p>
 <p>Like makefiles, Git facilitates reproducibility by providing more transparency towards one's workflow and allows for easier identification of any coding mistakes--all with the added element of chronological record. Commit messages further enable reproducibility by providing<br />
 commentary on a person's thought process and approach towards a project or research effort. It must be noted, however, that Git's effectiveness in enabling reproducibility relies largely on the author's frequency of commits.</p>
 <h2 id="github">GitHub</h2>
-<div class="figure">
-<img src="../images/github-logo.png" alt="the GitHub logo, a black and white sillhouette of an octocat and &quot;GitHub&quot; in black" />
-<p class="caption">the GitHub logo, a black and white sillhouette of an octocat and &quot;GitHub&quot; in black</p>
-</div>
+<p>[the GitHub logo, a black and white sillhouette of an octocat and &quot;GitHub&quot; in black]<img src="../images/github-logo.png" height = "75"></p>
 <p>GitHub is an online platform through which we can host copies of our local repositories.</p>
 <p>To link a local repository to GitHub, we first have to create a new online repository in a GitHub account. Once we finish creating the online repository, GitHub will give us a HTTPS link that we then associate with our local repository by typing the following:</p>
 <pre><code>git remote add origin https://github.com/user/repo-link-here.git</code></pre>
@@ -66,12 +62,9 @@ origin https://github.com/user/repo-link-here.git (push)</code></pre>
 <pre><code>git push origin master</code></pre>
 <p>to push changes tracked in our local repository to our online repository on GitHub.</p>
 <h3 id="role-in-this-project">Role in this project</h3>
-<p>GitHub is particularly useful in this project for two reasons. One is that I can back up my work on a frequent basis with minimal effort, since I only need to execute <code>git push origin master</code> to update the online repository after initial set up. This ensures that my data will be safe and reduces the reluctance that I would feel towards frequently backing up my files if I had to do it all manually. Another reason that GitHub is useful for this project is that by making my repository public, anyone can see what I am working on and view my progress. This promotes reproducibility by making my work transparent and clear to others, since they can look through my commit history and see what methods I am using to approach my project goal. In addition, others can collaborate with me on the project by creating a fork of my repository and making separate, independent changes to the files I have in my GitHub repository.</p>
+<p>GitHub is particularly useful in this project for two reasons. One is that I can back up my work on a frequent basis with minimal effort, since I only need to execute <code>git push origin master</code> to update the online repository after initial set up. This ensures that my data will be safely stored and reduces the reluctance that I would feel towards frequently backing up my files if I had to do it all manually. Another reason that GitHub is useful for this project is that by making my repository public, anyone can see what I am working on and view my progress. This promotes reproducibility by making my work transparent and clear to others, since they can look through my commit history and see what methods I am using to approach my project goal. In addition, others can collaborate with me on the project by creating a fork of my repository and making separate, independent changes to the files I have in my GitHub repository.</p>
 <h2 id="pandoc">Pandoc</h2>
-<div class="figure">
-<img src="../images/pandoc-logo.png" alt="the Pandoc logo, the word &quot;Pandoc&quot; in large font and &quot;a universal document converter&quot; in small font" />
-<p class="caption">the Pandoc logo, the word &quot;Pandoc&quot; in large font and &quot;a universal document converter&quot; in small font</p>
-</div>
+<p>[the Pandoc logo, the word &quot;Pandoc&quot; in large font and &quot;a universal document converter&quot; in small font]<img src="../images/pandoc-logo.png" height = "65"></p>
 <p>Pandoc is a document converter that can be called from the command line to easily convert one file type into another. This image from the <a href="http://pandoc.org/">Pandoc main page</a> shows all the possible file conversions.</p>
 <div class="figure">
 <img src="http://pandoc.org/diagram.jpg" />
@@ -82,10 +75,7 @@ origin https://github.com/user/repo-link-here.git (push)</code></pre>
 <p>where file.txt is the input file that we want to convert in .pdf output.</p>
 <p>Pandoc is highly useful in the sense that it can be easily called in command line to convert documents and can incorporate elements such as wild cards to make mass conversion of files much more efficient than if we were to use a GUI designed converter (which is often intended for converting a small number of files and sometimes involves purchase). Using Pandoc helps insure that my project files will be accessible in a variety of formats.</p>
 <h2 id="markdown">Markdown</h2>
-<div class="figure">
-<img src="../images/markdown-logo.png" alt="the Markdown logo, a black capital M" />
-<p class="caption">the Markdown logo, a black capital M</p>
-</div>
+<p>[the Markdown logo, a black capital M]<img src="../images/markdown-logo.png" height = "75"></p>
 <p>Markdown is a tool that converts plain text to HTML. The main idea behind Markdown is that a document written with Markdown should be as easy to read as possible and ready to be published without looking cluttered with tags or formatting instructions.</p>
 <h3 id="some-basic-examples-of-markdown-formatting">Some basic examples of Markdown formatting:</h3>
 <h4 id="headers">Headers</h4>
@@ -134,9 +124,9 @@ Double **asterisks* or <strong>underscores</strong> on each side of the text for
 <pre><code>[Text here](http://lmgtfy.com/?q=link+here)</code></pre>
 <p><a href="http://lmgtfy.com/?q=link+here">Text here</a></p>
 <h4 id="images">Images</h4>
-<pre><code>![the History Channel aliens guy saying Boromir things](https://i.imgflip.com/xy6fe.jpg)</code></pre>
+<pre><code>![the History Channel aliens guy saying Boromir things](http://bit.ly/2deHWTC)</code></pre>
 <div class="figure">
-<img src="https://i.imgflip.com/xy6fe.jpg" alt="the History Channel aliens guy saying Boromir things" />
+<img src="http://bit.ly/2deHWTC" alt="the History Channel aliens guy saying Boromir things" />
 <p class="caption">the History Channel aliens guy saying Boromir things</p>
 </div>
 <p><strong>These are just some of the many ways we can format text in Markdown.</strong></p>
