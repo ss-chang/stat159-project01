@@ -123,8 +123,8 @@ coding mistakes.
 Git
 ---
 
-\[the git logo, a red rhombus with white nodules in the
-center\]<img src="../images/git-logo.png" height = "75">
+![the git logo, a red rhombus with white nodules in the
+center](../images/git-logo.png){width="150px"}
 
 Git is system of version control that can be used to save and track
 changes in our work. Version control systems save the base version of a
@@ -170,8 +170,8 @@ commits.
 GitHub
 ------
 
-\[the GitHub logo, a black and white sillhouette of an octocat and
-"GitHub" in black\]<img src="../images/github-logo.png" height = "75">
+![the GitHub logo, a black and white sillhouette of an octocat and
+"GitHub" in black](../images/github-logo.png){width="175px"}
 
 GitHub is an online platform through which we can host copies of our
 local repositories.
@@ -220,9 +220,9 @@ in my GitHub repository.
 Pandoc
 ------
 
-\[the Pandoc logo, the word "Pandoc" in large font and "a universal
+![the Pandoc logo, the word "Pandoc" in large font and "a universal
 document converter" in small
-font\]<img src="../images/pandoc-logo.png" height = "65">
+font](../images/pandoc-logo.png){width="300px"}
 
 Pandoc is a document converter that can be called from the command line
 to easily convert one file type into another. This image from the
@@ -248,8 +248,8 @@ variety of formats.
 Markdown
 --------
 
-\[the Markdown logo, a black capital
-M\]<img src="../images/markdown-logo.png" height = "75">
+![the Markdown logo, a black capital
+M](../images/markdown-logo.png){width="125px"}
 
 Markdown is a tool that converts plain text to HTML. The main idea
 behind Markdown is that a document written with Markdown should be as
