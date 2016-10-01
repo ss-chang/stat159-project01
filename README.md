@@ -1,4 +1,4 @@
-![](images/stat159-logo.png)  
+<img src="images/stat159-logo.png" height = "75">  
 
 This repository holds the source files for Shannon Chang's Project 1 in Stat 159, taken fall 2016 at UC Berkeley.
   
